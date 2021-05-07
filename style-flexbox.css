@@ -1,0 +1,146 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+/* Latihan 1 */
+
+.container-one {
+    width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.main-column {
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-left {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-right {
+    flex: 1;
+    order: 3;
+}
+.sidebar-left a {
+    text-decoration: none;
+    color: #666;
+}
+.sidebar-left a:visited {
+    text-decoration: none;
+}
+
+/* Latihan 2 */
+.container-two {
+    max-width: 800px;
+    margin: 50px auto;
+}
+.services {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.services.one {
+    background-color: cadetblue;
+}
+.services.two {
+    background-color: cornflowerblue;
+}
+.services.three {
+    background-color: greenyellow;
+}
+
+/* Latihan 3 */
+.container-three {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.thumbnail {
+    width: 50%;
+}
+.thumbnail img {
+    width: 100%;
+}
+
+/* Latihan 4 */
+.container-four {
+    max-width: 800px;
+    margin: 50px auto;
+    
+}
+.card {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #eee;
+    margin: 10px;
+    flex: 1;
+}
+.card .header {
+    padding: 20px;
+    background-color: #666;
+    text-align: center;
+    
+}
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Latihan 5 */
+.container-five {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 5px solid black;
+    display: flex;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    color: white;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+.square span {
+    margin: auto;
+}
+
+/* Responsive */
+@media( min-width: 650px) {
+    .container-two {
+        display: flex;
+        justify-content: space-between;
+    }
+    .services {
+        width: 30%;
+    }
+    .thumbnail {
+        width: 25%;
+    }
+    .container-four {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card.besar {
+        transform: scale(1.12);
+    }
+    
+}
